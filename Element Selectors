@@ -1,0 +1,15 @@
+1 Options
+
+await t
+      .click(Selector('#address_id'))
+      .click(Selector('#address_id option').nth(2));
+      
+      
+2 Navbar
+
+.click(Selector('div.course-list > nav > ul > li').nth(5).find('a'))
+
+
+3 Tables
+
+.click(Selector('table > tbody > tr').nth(1).find('td').nth(4).find('a'))
