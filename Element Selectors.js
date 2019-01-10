@@ -3,8 +3,8 @@
 await t
       .click(Selector('#address_id'))
       .click(Selector('#address_id option').nth(2));
-      
-      
+
+
 2 Navbar
 
 .click(Selector('div.course-list > nav > ul > li').nth(5).find('a'))
@@ -66,3 +66,17 @@ const divTagSuccess = Selector('div.context-success.margin-b-3');
 
 // Submit
 .expect(getLocation()).match(/\/sessions\/create/)
+
+
+
+9 ID Selectors
+.click(Selector('#residential-rent-roll').find('div').withText('Rent Roll').filterVisible())
+.click(Selector('#residential-rent-roll > div').nth(1))
+
+
+10 Generate Uniqe names
+import { v4 } from 'uuid';
+
+//     const username = v4().replace(/-/g, '');
+//     const email = v4().replace(/-/g, '') + '@prodperfect.com';
+//     const password = v4().replace(/-/g, '');
