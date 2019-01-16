@@ -39,3 +39,8 @@ if (await Selector('.incorrect-browser-modal').visible) {
     }
     
 
+5 Generate Random Numbers
+const generateRandomNumber = (min , max) => {    
+  let random_number = Math.random() * (max-min) + min;
+   return Math.floor(random_number).toString();
+}
